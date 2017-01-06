@@ -3,12 +3,21 @@ public class Client {
 	
 	private String nom;
 	private double montantAchat;
-	
+	private String ville;
 		
-	public Client(String nom, double montantAchat) {
+	public Client(String nom, double montantAchat, String ville) {
 		super();
 		this.nom = nom;
 		this.montantAchat = montantAchat;
+		this.ville = ville;
+	}
+		
+	public String getVille() {
+		return ville;
+	}
+	
+	public void setVille(String ville) {
+		this.ville = ville;
 	}
 	
 	public String getNom() {
